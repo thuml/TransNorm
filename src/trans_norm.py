@@ -86,6 +86,7 @@ class _TransNorm(Module):
             key = prefix + name
             if 'source' in key or 'target' in key:
                 key = key[:-7]
+                print(key)
             if key in state_dict:
                 input_param = state_dict[key]
                 if input_param.shape != param.shape:

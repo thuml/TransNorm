@@ -1,4 +1,5 @@
-# An example code of TransNorm on CDAN implemented in PyTorch
+# TransNorm
+Code release for ["Transferable Normalization: Towards Improving Transferability of Deep Neural Networks"](https://papers.nips.cc/paper/8470-transferable-normalization-towards-improving-transferability-of-deep-neural-networks) (NeurIPS 2019)
 
 ## Prerequisites
 - PyTorch >= 0.4.0 (with suitable CUDA and CuDNN version)
@@ -9,8 +10,6 @@
 - PIL
 
 ## Training
-All the parameters are set to optimal in our experiments. The following are the command for each task. The test_interval can be changed, which is the number of iterations between near test.
-```
 ```
 Office-31
 
@@ -34,17 +33,17 @@ pythonn train_image.py --gpu_id id --net ResNet50 --dset image-clef --test_inter
 
 ## Acknowledgement
 This code is implemented based on the published code of CDAN and BatchNorm, and it is our pleasure to acknowledge their contributions.
-CDAN: Conditional Adversarial Domain Adaptation
+CDAN (Conditional Adversarial Domain Adaptation)
 BatchNorm (Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift)
 
 ## Citation
 If you use this code for your research, please consider citing:
 ```
 @inproceedings{Wang19TransNorm,
-  title={Transferable Normalization: Towards Improving Transferability of Deep Neural Networks},
-  author={Ximei Wang, Ying Jin, Mingsheng Long, Jianmin Wang, and Michael I. Jordan},
-  booktitle={Advances in Neural Information Processing Systems},
-  year={2019}
+    title = {Transferable Normalization: Towards Improving Transferability of Deep Neural Networks},
+    author = {Wang, Ximei and Jin, Ying and Long, Mingsheng and Wang, Jianmin and Jordan, Michael I},
+    booktitle = {Advances in Neural Information Processing Systems 32},
+    year = {2019}
 }
 ```
 
@@ -54,4 +53,3 @@ If you have any problem about our code, feel free to contact
 - longmingsheng@gmail.com
 
 or describe your problem in Issues.
-
