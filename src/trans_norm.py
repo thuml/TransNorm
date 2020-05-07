@@ -110,7 +110,7 @@ class _TransNorm(Module):
 
 
 
-    def forward(self, input, option='residual', running_flag=False, kernel= 'Student'):
+    def forward(self, input):
         self._check_input_dim(input)
         if self.training :  ## train mode
 
